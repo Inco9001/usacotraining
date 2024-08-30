@@ -43,7 +43,7 @@ def intersection(matrix):
 
     return common_values
 
-
+# Edward added this
 size_of_lock = int(fin.readline().strip())
 john_lock = list(map(int,fin.readline().strip().split()))
 master_lock = list(map(int,fin.readline().strip().split()))
