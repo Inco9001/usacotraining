@@ -8,27 +8,26 @@ fout = open ('skidesign.out', 'w')
 def calculate_changes(arr):
     change = []
     temp_arr = []
-    while arr[-1] - arr[0] > 17 and arr[-2] - arr[1] > 17:
-        total_change = arr[-1] - arr[0] - 17
+    start = 0
+    end = -1
+    for t in range(len(arr)//2):
+        total_change = arr[end] - arr[start] - 17
         if total_change < 1: 
-            arr.pop(-1)
-            continue
+            break
         change.append(total_change//2)
-        temp_arr.append(arr[-1] - total_change//2)
-        arr[0]
+        temp_arr.append(arr[end] - total_change//2)
         if total_change%2 == 0:
             change.append(total_change//2)
-            temp_arr.append(arr[0] + total_change//2)
+            temp_arr.append(arr[start] + total_change//2)
             arr.pop(-1)
         else:
             change.append(total_change//2 + 1)
-            temp_arr.append(arr[0] + total_change//2 + 1)
-        arr.pop(0)
+            temp_arr.append(arr[start] + total_change//2 + 1)
+        end -= 1 
+        start += 1
     temp_arr.sort()
-    print(temp_arr)
-        
+    print(temp_arr)   
     return change
-
 def calculate_final_price(arr1):
     final_answer = 0
     arr = calculate_changes(arr1)
