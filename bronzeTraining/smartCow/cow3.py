@@ -1,0 +1,1 @@
+fin = open("cow.in",'r')

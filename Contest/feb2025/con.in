@@ -1,0 +1,41 @@
+2 0
+#.
+..
+
+def y():
+# def makeQuarters(var):
+#     canvas = []
+#     for t in range(var*2):
+#         canvas.append(list(map(str,fin.readline().strip())))
+#     quarters = []
+#     tempArr1 = []
+#     for y in range(var):
+#         for x in range(var):
+#             tempArr1.append(canvas[y][x])
+#     quarters.append(tempArr1)
+#     tempArr2 = []
+#     for y in range(var):
+#         for x in range(var):
+#             tempArr2.append(canvas[y][-1-x])
+#     quarters.append(tempArr2)
+#     tempArr3 = []
+#     for y in range(var):
+#         for x in range(var):
+#             tempArr3.append(canvas[-1-y][x])
+#     quarters.append(tempArr3)
+#     tempArr4 = []
+#     for y in range(var):
+#         for x in range(var):
+#             tempArr4.append(canvas[-1-y][-1-x])
+#     quarters.append(tempArr4)
+#     return quarters
+# def matches(quarters):
+#     var = len(quarters[0])
+#     differences = [0,0,0,0]
+#     for t in range(3):
+#         for i in range(t,4):
+#             for j in range(var):
+#                 if quarters[t][j] != quarters[i][j]:
+#                     differences[t] += 1
+#                     differences[i] += 1
+#     return differences

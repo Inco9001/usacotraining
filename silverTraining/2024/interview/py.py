@@ -1,0 +1,5 @@
+fin = open("py.in",'r')
+numCows, numFarmers = map(int,fin.readline().split())
+line = list(map(int,fin.readline().split()))
+# numCows, numFarmers = map(int,input().split())
+# line = list(map(int,input().split()))
